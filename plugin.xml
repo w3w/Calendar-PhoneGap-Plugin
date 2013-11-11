@@ -34,4 +34,13 @@
       </config-file>
       <source-file src="src/android/nl/xservices/plugins/Calendar.java" target-dir="src/nl/xservices/plugins" />
    </platform>
+   
+    <platform name="wp8">
+        <config-file target="config.xml" parent="/*">
+            <feature name="Calendar">
+                <param name="wp-package" value="Calendar" />
+            </feature>
+        </config-file>
+        <source-file src="src/wp8/Calendar.cs" />
+    </platform>
 </plugin>
