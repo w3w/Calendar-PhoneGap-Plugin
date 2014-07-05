@@ -33,6 +33,8 @@ namespace Cordova.Extension.Commands
             saveAppointmentTask.AppointmentStatus = Microsoft.Phone.UserData.AppointmentStatus.Free;
             
             saveAppointmentTask.Show();
+
+            DispatchCommandResult(new PluginResult(PluginResult.Status.OK));
         }
 
         public static DateTime UnixTimeStampToDateTime(string unixTimeStampInMs)
